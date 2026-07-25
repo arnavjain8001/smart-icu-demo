@@ -1,20 +1,41 @@
-<<<<<<< HEAD
-# React + Vite
+# 🏥 Smart ICU Monitoring & Patient Management System
 
-This template provides a minimal setup to get React working in Vite with HMR and some Oxlint rules.
+A modern, real-time web application designed for intensive care units (ICU) to monitor patient vital signs, track emergency timelines, manage ward capacities, and coordinate healthcare staff efficiently.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## 🌟 Key Features
 
-## React Compiler
+* 🩺 **Real-Time Patient Vitals:** Live monitoring of critical metrics including Heart Rate (BPM), SpO2 levels, Blood Pressure, and Body Temperature.
+* 🚨 **Emergency Alerts & Timeline:** Instant visual popups and chronological emergency logging for quick medical intervention.
+* 🏢 **Ward & Bed Overview:** Comprehensive dashboard to track available, occupied, and critical ICU beds.
+* 👨‍⚕️ **Staff Management:** Track doctors and nursing staff on duty with real-time assignment statuses.
+* 📋 **Patient History & Reports:** Detailed medical histories, past reports, and vital trend analytics.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+---
 
-## Expanding the Oxlint configuration
+## 🛠️ Tech Stack
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and Oxlint's TypeScript related rules in your project.
-=======
-# smart-icu-demo
->>>>>>> 9e97584fdf5f95950c40e50e1c887155c5e1f379
+* **Frontend:** React.js, Vite
+* **Styling:** CSS3, Tailwind CSS / Custom Styling
+* **Icons:** Lucide React / SVG Icons
+* **Data Management:** Mock Data Service for real-time state simulation
+
+---
+
+## 📁 Project Structure
+
+```text
+smart-icu-demo/
+├── public/                 # Favicon & Static SVG icons
+├── src/
+│   ├── assets/             # Branding images & SVG assets
+│   ├── components/         # Reusable UI components (Navbar, Sidebar, PatientCard, etc.)
+│   ├── pages/              # Main view pages (Dashboard, WardOverview, EmergencyTimeline, etc.)
+│   ├── mockData.js         # Simulated ICU patient vitals and hospital data
+│   ├── App.jsx             # Main router & layout entry point
+│   ├── index.css           # Global application styles
+│   └── main.jsx            # React DOM render entry
+├── package.json            # Project dependencies and scripts
+└── vite.config.js          # Vite build configuration
+
